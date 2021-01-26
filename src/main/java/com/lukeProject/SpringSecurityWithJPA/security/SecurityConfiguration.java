@@ -29,7 +29,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
         // auth.authenticationProvider(daoAuthenticationProvider());
         auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder);
         // auth.userDetailsService(userDetailsService);
-    }
+    }  
 
     @Bean 
     public BCryptPasswordEncoder getPasswordEncoder() {
